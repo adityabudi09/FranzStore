@@ -57,11 +57,14 @@
             android:text="Username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
             <EditText
-                android:paddingLeft="10dp"
-                android:background="@drawable/form"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"/>
+                android:layout_height="45dp"
+                android:background="@drawable/form"
+                android:paddingLeft="10dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:autofillHints="emailAddress" />
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
@@ -123,10 +126,12 @@
                 <RelativeLayout
                     android:layout_width="15dp"
                     android:layout_height="match_parent"/>
+
                 <Button
-                    android:background="@drawable/google"
                     android:layout_width="35dp"
-                    android:layout_height="35dp"/>
+                    android:layout_height="35dp"
+                    android:background="@drawable/google"
+                    tools:ignore="TouchTargetSizeCheck" />
                 <RelativeLayout
                     android:layout_width="15dp"
                     android:layout_height="match_parent"/>
